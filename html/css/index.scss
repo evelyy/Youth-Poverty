@@ -1,0 +1,77 @@
+/* Style the top nav bar */
+ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+}
+li {
+				display: inline;
+				float: left;
+}
+li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.active {
+				background-color: #4caf50;
+}
+li a:hover:not(.active) {
+				background-color: #000000;
+}
+
+/* Style the first paragraph, making it the main focus of the page */
+h1 {
+				text-align: center;
+				font-size: 20px;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				color: #4caf50;
+}
+
+/* Style the button */
+button {
+				background-color: #4caf50;
+				border: none;
+				color=: #ffffff;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				transition-duration: 0.2s;
+				border: 2px solid #4caf50;
+				border-radius: 4px;
+}
+button span {
+	cursor: pointer;
+	display: inline block;
+	position: relative;
+	transition: 0.5s
+}
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+}
+button:hover {
+	background-color: white;
+	color: #4caf50;
+}
+button:hover span {
+	padding-right: 25px;
+}
+button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+h1(.bold) {
+				font-size: 400px;
+}
